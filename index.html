@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>News homepage</title>
+  </head>
+  <body class="bg-[#FFFDFA]">
+    <!-- Navbar -->
+    <div class="container px-5 pt-2 lg:px-48 lg:pt-16 flex justify-between items-center">
+      <div class="logo">
+        <img src="logo.svg" alt="company-logo">
+      </div>
+      <div class="right-side lg:flex hidden gap-8">
+        <div class="items text-sm cursor-pointer hover:text-[#EF5F52]">Home</div>
+        <div class="items text-sm cursor-pointer hover:text-[#EF5F52]">New</div>
+        <div class="items text-sm cursor-pointer hover:text-[#EF5F52]">Popular</div>
+        <div class="items text-sm cursor-pointer hover:text-[#EF5F52]">Trending</div>
+        <div class="items text-sm cursor-pointer hover:text-[#EF5F52]">Categories</div>
+      </div>
+      <div class="menu lg:hidden">
+        <img src="icon-menu.svg" alt="hamburger-menu">
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="container px-5 pt-5 gap-y-10 lg:px-48 lg:pt-10 grid grid-cols-1 lg:grid-cols-11 lg:gap-x-5">
+      <div class="left flex flex-col col-span-8">
+        <div class="web3-image">
+          <img class="hidden lg:block" src="image-web-3-desktop.jpg" alt="web3-image">
+          <img class="md:block lg:hidden xl:hidden 2xl:hidden" src="image-web-3-mobile.jpg" alt="web3-image">
+        </div>
+        <div class="web3-dess flex flex-col gap-2 pt-2 lg:flex lg:flex-row lg:gap-60 lg:pt-5">
+          <div class="web3-desc-left text-5xl font-black w-64 md:w-auto">
+            The Bright Future of Web 3.0?
+          </div>
+          <div class="web3-desc-right flex flex-col gap-4 lg:flex lg:flex-col lg:justify-between">
+            <div class="desc text-xs text-gray-600 leading-5">
+              We dive into the next evolution of the web that claims to put the power of platforms back into the hands of the people. But is it really fulfilling its promise?
+            </div>
+            <div class="read-more">
+              <button class="px-8 py-3 text-white bg-[#EF5F52] text-xs tracking-[.2em] hover:bg-[#00001A]">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right flex flex-col justify-evenly col-span-3 bg-[#00001A] p-8 2xl:p-6">
+        <div class="listing text-[#E9AB53] text-3xl font-extrabold">
+          New
+        </div>
+        <div class="listing pt-4">
+          <div class="text-[#FFFDFA] font-bold text-sm">Hydrogen VS Electric Cars</div>
+          <div class="text-[#C5C6CE] text-xs pt-2 leading-6">Will hydrogen-fueled cars ever catch up to EVs?</div>
+        </div>
+        <hr class="my-4 border-gray-400"/>
+        <div class="listing">
+          <div class="text-[#FFFDFA] font-bold text-sm">The Downsides of AI Artistry</div>
+          <div class="text-[#C5C6CE] text-xs pt-2 leading-6">What are the possible adverse effects of on-demand AI image generation?</div>
+        </div>
+        <hr  class="my-4 border-gray-400"/>
+        <div class="listing">
+          <div class="text-[#FFFDFA] font-bold text-sm">Is VC Funding Drying Up?</div>
+          <div class="text-[#C5C6CE] text-xs pt-2 leading-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="container px-5 pt-5 gap-y-8 lg:px-48 lg:pt-20 flex flex-col lg:flex lg:flex-row lg:justify-between">
+      <div class="cards">
+        <div class="card-inner flex gap-8">
+          <div class="img-container w-24">
+            <img src="image-retro-pcs.jpg" alt="retro">
+          </div>
+          <div class="short desc flex flex-col justify-between">
+            <div class="font-extrabold text-gray-400 text-xl">01</div>
+            <div class="text-sm font-black">Reviving Retro PCs</div>
+            <div class="text-xs text-gray-600">What happens when old PCs are given modern upgrades?</div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-inner flex gap-8">
+          <div class="img-container w-24">
+            <img src="image-top-laptops.jpg" alt="retro">
+          </div>
+          <div class="short desc flex flex-col justify-between">
+            <div class="font-extrabold text-gray-400 text-xl">02</div>
+            <div class="text-sm font-black">Top 10 Laptops of 2022</div>
+            <div class="text-xs text-gray-600">Our best picks for various needs and budgets.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-inner flex gap-8">
+          <div class="img-container w-24">
+            <img src="image-gaming-growth.jpg" alt="retro">
+          </div>
+          <div class="short desc flex flex-col justify-between">
+            <div class="font-extrabold text-gray-400 text-xl">03</div>
+            <div class="text-sm font-black">The Growth of Gaming</div>
+            <div class="text-xs text-gray-600">How the pandemic has sparked fresh opportunities.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </body>
+</html>
